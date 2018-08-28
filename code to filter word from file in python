@@ -1,0 +1,11 @@
+myfile=open('/home/ravi/doc1.txt',"r")
+newfile=open('/home/ravi/doc2.txt',"w")
+line=myfile.readlines()                  #filtering on the basis of alphabets e.g A,a
+
+for word in line:
+    if word.startswith("a") or word.startswith("A"):
+     x=word
+     newfile.write(x)
+print"Successful"
+myfile.close()
+newfile.close()
